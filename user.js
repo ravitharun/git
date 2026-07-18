@@ -10,7 +10,7 @@ const user=()=>{
 
 console.log("Payment Module");
 
-     alert("hey user!")
+     alert("Payment Module")
     
 
 }
