@@ -9,12 +9,11 @@ const user=()=>{
 
 
      console.log("user");
+
+     alert("hey user!")
     
 
 }
 
 
-user()
-user()
-user()
 user()
