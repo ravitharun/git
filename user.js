@@ -8,7 +8,7 @@ const user=()=>{
 
 
 
-     console.log("user");
+console.log("Payment Module");
 
      alert("hey user!")
     
