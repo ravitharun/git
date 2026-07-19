@@ -1,24 +1,6 @@
-console.log("hi");
-
-
-
-
 const user=()=>{
 
 
-
-
-console.log("Payment");
-     alert("Payment Module")
-     alert("Payment Module")
-     alert("Payment Module")
-     alert("Payment Module")
-    
-
+     console.log("User Login....");
+     
 }
-
-
-user()
-
-
-console.log("Main branch update");
