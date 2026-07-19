@@ -1,3 +1,2 @@
-function login() {
-    console.log("Login");
-}
+console.log("Application Started");
+console.log("Navbar Added");
