@@ -1,2 +1,1 @@
-console.log("Application Started");
-console.log("Navbar Added");
+// git revert -m 1 HEAD
