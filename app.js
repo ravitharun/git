@@ -1,1 +1,3 @@
-console.log("Application Started");
+function login() {
+    console.log("Login");
+}
