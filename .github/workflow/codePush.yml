@@ -1,0 +1,13 @@
+name: Github Push Code
+
+on:
+Push:
+- main
+
+job:
+ui:
+-name: Check
+run : echo "server" 
+need: server
+
+
