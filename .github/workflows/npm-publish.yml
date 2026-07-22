@@ -12,7 +12,5 @@ jobs:
 
 
    steps:
-   - name: check teh ymal file
-     run : echo "hi"
-   - name: check teh ymal file
-     run : echo "hi"
+     - name: Print Message
+       run: echo "Hello, GitHub Actions!"
