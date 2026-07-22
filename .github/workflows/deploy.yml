@@ -1,0 +1,15 @@
+name: Check
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ui:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: echo "Hello, GitHub Actions!"
