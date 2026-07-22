@@ -13,5 +13,7 @@ jobs:
     steps:
     - name: Print Message
       run: echo "Hello, GitHub Actions!"
+    - name: Test Secret
+      run: echo $AWS_ACCESS_KEY
     env:
-       run: echo ${{ secrets.AWS_ACCESS_KEY }}
+      AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
