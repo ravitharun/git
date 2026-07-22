@@ -21,7 +21,7 @@ jobs:
     -  run: echo $PORT
     - name: Test Secret
       run: echo $AWS_ACCESS_KEY
-    - name: useranme $name_user
+    - name: useranme name_user
       run: echo $name_user
     env:
       AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
