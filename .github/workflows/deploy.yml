@@ -1,16 +1,15 @@
-name: Chek
-on:
-push:
-branch:
-- main
+name: Check
 
+on:
+  push:
+    branches:
+      - main
 
 jobs:
- ui:
-   name: Test
-   runs-on: ubuntu-latest
+  ui:
+    name: Test
+    runs-on: ubuntu-latest
 
-
-   steps:
-     - name: Print Message
-       run: echo "Hello, GitHub Actions!"
+    steps:
+      - name: Print Message
+        run: echo "Hello, GitHub Actions!"
