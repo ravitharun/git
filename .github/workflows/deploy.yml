@@ -3,33 +3,34 @@ name: Check
 on:
   push:
     branches:
-    - main
-# WorkFlow LEVEL
+      - main
+
+# Workflow Level
 env:
   NODE_ENV: production
   PORT: 5000
 
-
 jobs:
-  ui:
   build:
-    runs-on: ubuntu-latest
-    env:
-     name_user: Tharun
     name: Test
     runs-on: ubuntu-latest
 
-    steps:
-    - name: Print Message
-      run: echo "Hello, GitHub Actions!"
-
-    - run: echo $NODE_ENV
-
-    -  run: echo $PORT
-
-    - name: Test Secret
-      run: echo $AWS_ACCESS_KEY
-    - name: useranme name_user
-      run: echo $name_user
+    # Job Level
     env:
+      name_user: Tharun
       AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
+
+    steps:
+      - name: Print Message
+        run: echo "Hello, GitHub Actions!"
+
+      - name: Print Workflow Env
+        run: |
+          echo $NODE_ENV
+          echo $PORT
+
+      - name: Print Secret
+        run: echo $AWS_ACCESS_KEY
+
+      - name: Print Job Env
+        run: echo $name_user
