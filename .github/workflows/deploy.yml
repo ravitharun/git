@@ -3,7 +3,7 @@ name: Check
 on:
   push:
     branches:
-      - main
+    - main
 
 jobs:
   ui:
@@ -11,5 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print Message
-        run: echo "Hello, GitHub Actions!"
+    - name: Print Message
+      run: echo "Hello, GitHub Actions!"
+      env:
+        run: echo ${{secrets.AWS_ACCESS_KEY}}
