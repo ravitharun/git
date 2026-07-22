@@ -1,13 +1,16 @@
-name: Github Push Code
+name: MERN CI Pipeline
 
 on:
-Push:
-- main
+  push:
+    branches:
+    - main
+    - develop
 
-job:
-ui:
--name: Check
-run : echo "server" 
-need: server
+jobs:
+  frontend:
+    name: Frontend Build
+    runs-on: ubuntu-latest
 
-
+    steps:
+    - name: Run Code
+      run: echo "hi"
