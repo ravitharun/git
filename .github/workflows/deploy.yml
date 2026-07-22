@@ -12,7 +12,8 @@ jobs:
   ui:
     name: Test
     runs-on: ubuntu-latest
-
+    env:
+     name_user: Tharun
     steps:
     - name: Print Message
       run: echo "Hello, GitHub Actions!"
@@ -20,5 +21,7 @@ jobs:
     -  run: echo $PORT
     - name: Test Secret
       run: echo $AWS_ACCESS_KEY
+    - name: useranme $name_user
+      run: echo $name_user
     env:
       AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
