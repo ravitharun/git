@@ -5,6 +5,9 @@ on:
     branches:
     - main
 
+env:
+  NODE_ENV: production
+  PORT: 5000
 jobs:
   ui:
     name: Test
@@ -13,6 +16,8 @@ jobs:
     steps:
     - name: Print Message
       run: echo "Hello, GitHub Actions!"
+    - run: echo $NODE_ENV
+    -  run: echo $PORT
     - name: Test Secret
       run: echo $AWS_ACCESS_KEY
     env:
