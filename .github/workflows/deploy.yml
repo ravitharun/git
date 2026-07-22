@@ -11,9 +11,8 @@ env:
   PORT: 5000
 
 jobs:
-  build:
-    name: Test
-    runs-on: ubuntu-latest
+  build:    #Jobname
+    runs-on: ubuntu-latest    # runs on machine
 
     # Job Level
     env:
